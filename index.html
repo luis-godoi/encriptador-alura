@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Encriptador</title>
+</head>
+<body>
+  <header class=".header">
+      <img class="logo-alura" src="./assets/logoalura.svg" alt="Logo da Alura">
+  </header>
+  <main>
+    <section class="esquerda">
+      <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto aqui"></textarea>
+      <div class="aviso-minusculas">
+        <img src="./assets/iconeatencao.svg">
+        Apenas letras minúsculas e sem acento.</div>
+      <div class="botoes">
+        <button class="botao-criptografar" onclick="botaoEncriptar()">Criptografar</button>
+        <button class="botao-desencriptografar" onclick="botaoDesencriptar()">Desencriptografar</button>
+      </div>
+    </section>
+    <section class="direita">
+      <textarea class="mensagem" cols="20" rows="10"></textarea>
+      <h6 id="nenhuma_mensagem"></h6>
+      <p id="nenhuma_mensagem_detalhada"></p>
+      <button id="botao-copiar" onclick="botaocopiar()">Copiar</button>
+    </section>
+  </main>
+  <footer class="rodape">Desenvolvido por Luís Godoi em 2024.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
